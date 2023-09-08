@@ -22,7 +22,6 @@ app.use(express.urlencoded({extended: true}))
 app.use(cors())
 
 app.get("/", (req, res) => {
-    console.log("Hi from the server");
     res.status(200);
     res.json({message: "Hello from the server"});
 })
